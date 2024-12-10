@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,                   // Enable JavaScript files
+    "skipLibCheck": true,
+    "strict": false,                   // Disable strict checks (you can enable if you want them)
+    "noEmit": true,                    // No output (no compilation to other files)
+    "incremental": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",                // Proper JSX support for JavaScript
+    "baseUrl": ".",                    // Root path for modules
+    "paths": {
+      "@/*": ["./*"]                   // Path alias for ease of import
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.js",                          // Include JavaScript files
+    "**/*.jsx",                         // Include JSX files
+    "components/ui/dialog.jsx"          // Example specific JSX file
+  ],
+  "exclude": ["node_modules"]
+}
